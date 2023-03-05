@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
+import { QueryClientProvider } from '@tanstack/react-query';
+import { ThemeProvider } from '@emotion/react';
+
 import CustomRouter from './router/CustomRouter';
+import queryClient from './query/queryClient';
+import { theme } from './style/theme';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
-      <CustomRouter />
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider theme={theme}>
+          <CustomRouter />
+        </ThemeProvider>
+      </QueryClientProvider>
     </BrowserRouter>
   </React.StrictMode>,
 );
