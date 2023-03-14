@@ -4,15 +4,8 @@ import { theme } from '../../../style/theme';
 import Button, { ButtonProps } from './Button';
 
 export default {
-  title: 'Button',
+  title: 'Design System/Common/Button',
   component: Button,
-  decorators: [
-    Story => (
-      <ThemeProvider theme={theme}>
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
   parameters: {
     docs: {
       description: {
