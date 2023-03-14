@@ -1,7 +1,7 @@
 import { Meta } from '@storybook/react';
 import { useState } from 'react';
 
-import MenuButton, { MenuButtonProps } from './MenuButton';
+import MenuButton from './MenuButton';
 
 export default {
   title: 'App/Button/MenuButton',

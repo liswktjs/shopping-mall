@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import styled from '@emotion/styled';
 
 import Logo from '../../components/@common/Logo/Logo';
-import MenuButton from '../../components/@common/MenuButton/MenuButton';
+import MenuButton from '../../components/@app/MenuButton/MenuButton';
 import { URL } from '../../constant';
 
 const Header = () => {
