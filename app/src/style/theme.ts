@@ -5,6 +5,8 @@ const colors = {
   BLUE_600: '#95BDFF',
   WHITE_500: '#fff',
   BLACK_500: '#111',
+  GRAY_500: '#eeeeee',
+  GRAY_600: '#e0e0e0',
 };
 
 export const theme = {
