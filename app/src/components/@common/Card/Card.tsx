@@ -45,6 +45,10 @@ const Container = styled.div<{ width: string; height: string }>`
   border-radius: 10px;
   box-shadow: 1px 1px 10px ${({ theme }) => theme.colors.GRAY_600};
   background-color: ${({ theme }) => theme.colors.WHITE_500};
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export default Card;
