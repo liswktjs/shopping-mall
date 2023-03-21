@@ -12,6 +12,11 @@ const colors = {
   YELLOW_500: '#FFDE00',
 };
 
+const zIndex = {
+  LOADING: 100,
+};
+
 export const theme = {
   colors,
+  zIndex,
 } as const;
