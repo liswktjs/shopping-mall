@@ -1,30 +1,37 @@
 import { Suspense } from 'react';
+import styled from '@emotion/styled';
+
 import ProductCard from '../components/@app/ProductCard/ProductCard';
 import ProductEmptyMsg from '../components/@app/ProductEmptyMsg/ProductEmptyMsg';
 import Loading from '../components/@common/Loading/Loading';
+import ProductResponsiveList from '../components/utils/ProductResponsiveList/ProductResponsiveList';
 
 import useGetProductList from '../hooks/useGetProductList';
 
 const Home = () => {
   return (
-    <div>
+    <Container>
       <Suspense fallback={<Loading />}>
         <ProductList />
       </Suspense>
-    </div>
+    </Container>
   );
 };
+
+const Container = styled.div`
+  margin: 30px;
+`;
 
 const ProductList = () => {
   const { productList } = useGetProductList();
 
   if (productList && productList.length) {
     return (
-      <ul>
+      <ProductResponsiveList>
         {productList.map(item => (
           <ProductCard key={item.id} {...item} />
         ))}
-      </ul>
+      </ProductResponsiveList>
     );
   }
   return <ProductEmptyMsg />;
