@@ -8,6 +8,7 @@ const colors = {
   BLACK_500: '#111',
   GRAY_500: '#eeeeee',
   GRAY_600: '#e0e0e0',
+  GRAY_800: '#3C4048',
   YELLOW_500: '#FFDE00',
 };
 
