@@ -10,7 +10,7 @@ const Header = () => {
   const navigate = useNavigate();
   const nowRoute = useLocation();
 
-  const [nowUrl, setNowUrl] = useState<'home' | 'cart'>('home');
+  const [nowUrl, setNowUrl] = useState<'home' | 'cart' | 'others'>('home');
 
   useEffect(() => {
     if (nowRoute.pathname === URL.HOME) {
@@ -21,6 +21,7 @@ const Header = () => {
       setNowUrl('cart');
       return;
     }
+    setNowUrl('others');
   }, [nowRoute]);
 
   const onHomeTabClick = () => {
