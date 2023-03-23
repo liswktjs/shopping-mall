@@ -14,3 +14,5 @@ export type ProductRatingType = {
 };
 
 export type ProductResponseType = ProductItemType[];
+
+export type ProductDetailType = Omit<ProductItemType, 'rating'>;
