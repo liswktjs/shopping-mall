@@ -42,7 +42,7 @@ const Header = () => {
 
   return (
     <Container>
-      <LogoContainer>
+      <LogoContainer onClick={onHomeTabClick}>
         <Logo />
       </LogoContainer>
       <MenuContainer>
