@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 import { css, keyframes } from '@emotion/react';
 
 export interface SkeletonProps {
-  width: number;
-  height: number;
+  width: string;
+  height: string;
 }
 
 const Skeleton = ({ width, height }: SkeletonProps) => {
@@ -22,10 +22,10 @@ const animation = keyframes`
   }
 `;
 
-const Container = styled.div<{ width: number; height: number }>`
+const Container = styled.div<SkeletonProps>`
   ${({ theme, width, height }) => css`
-    width: ${width}px;
-    height: ${height}px;
+    width: ${width};
+    height: ${height};
     background: linear-gradient(45deg, ${theme.colors.GRAY_500}, ${theme.colors.GRAY_600});
   `}
   animation: ${animation} 1s ease-in-out infinite;

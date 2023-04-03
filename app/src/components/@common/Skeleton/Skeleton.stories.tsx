@@ -10,6 +10,6 @@ const Template = (args: SkeletonProps) => <Skeleton {...args} />;
 
 export const DefaultSkeleton: Story<SkeletonProps> = Template.bind({});
 DefaultSkeleton.args = {
-  width: 500,
-  height: 500,
+  width: '500px',
+  height: '500px',
 };
