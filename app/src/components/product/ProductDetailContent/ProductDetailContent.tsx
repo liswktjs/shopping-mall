@@ -44,9 +44,11 @@ const ProductDetailContent = ({
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-
+  width: 50vw;
+  height: fit-content;
   justify-content: center;
   align-items: center;
+  line-height: 20px;
 `;
 
 const CardContainer = styled.div`
@@ -65,6 +67,7 @@ const Img = styled.img`
 `;
 
 const Info = styled.div`
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -72,12 +75,13 @@ const Info = styled.div`
 
   span {
     display: block;
-    margin-top: 15px;
+    margin-top: 8px;
+    word-break: break-word;
   }
 `;
 
 const Desc = styled.div`
-  width: 65%;
+  min-width: 55%;
   margin-top: 20px;
   line-height: 30px;
 `;
