@@ -2,7 +2,7 @@ import { Meta, Story } from '@storybook/react';
 import ProductCard, { ProductCardProps } from './ProductCard';
 
 export default {
-  title: 'App/ProductCard',
+  title: 'App/product/Card',
   component: ProductCard,
 } as Meta;
 

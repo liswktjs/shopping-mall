@@ -2,7 +2,7 @@ import { Meta } from '@storybook/react';
 import ProductEmptyMsg from './ProductEmptyMsg';
 
 export default {
-  title: 'App/ProductEmptyMsg',
+  title: 'App/product/EmptyMsg',
   component: ProductEmptyMsg,
 } as Meta;
 
